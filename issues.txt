@@ -1,0 +1,16 @@
+
+BUG-001 | High | Incorrect average calculation
+Expected: Marks 80, 90, 70 must produce an average of 80.
+Actual: The calculation divides by the wrong number.
+
+BUG-002 | High | Incorrect pass/fail decision
+Expected: A student passes only when every subject mark is at least 35.
+Actual: The student passes when any one subject mark is at least 35.
+
+BUG-003 | Medium | Incorrect grade boundaries
+Expected: A=90-100, B=75-89, C=60-74, D=35-59, F=below 35.
+Actual: Some grade ranges are missing or incorrect.
+
+BUG-004 | High | Report status inconsistency
+Expected: The report must use the same pass/fail decision as the grade calculator.
+Actual: The report uses a separate average-based rule.
